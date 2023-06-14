@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us</title>
+<link rel="stylesheet" type="text/css" href="css/contactusStyle.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+   <script src="js/main.js"> </script>
+ <script>
+        function start() {
+            timeDigtal();
+            hitCount();
+            
+            
+        }
+    </script>
+</head>
+<body onload= "start()"><!-- This is the start of the web page-->
+	
+		<header><!-- This is the Header bar-->
+		<div id="topbar">
+	<!-- Script 11: Dynamic webpage updates-->
+		<div id= "digtime" > </div>
+		
+		<!-- Script 12: Hit Page Counter-->
+		<div id= "hits" > </div>
+		</div>
+
+	 </header>
+
+	<!----navigation bar Section start---->
+
+	<div class="hero">
+		<nav>
+		<a href="file:///C:/Users/yonas/OneDrive%20-%20City%20of%20Dublin%20ETB/WEB%20AUTO%202/i%20html_css_js_web_project_Yonas%20Haftom/index.html" style= "text-decoration:none;"><h2   onclick="location.href='file:///C:/Users/yonas/OneDrive%20-%20City%20of%20Dublin%20ETB/WEB%20AUTO%202/i%20html_css_js_web_project_Yonas%20Haftom/index.html'"   class="logo">A<span>I</span></h2></a>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="History.html">History</a></li>
+				<li><a href="Robots.html">Robots</a></li>
+				<li><a href="ContactUs.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<h2>&nbsp;</h2>
+		<div class="container">
+		
+  <div style="text-align:center">
+  
+    <h2>Contact Us</h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.0172071895627!2d-6.213945684298508!3d53.3966320799896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670fd0cbb98613%3A0x332fde4a5227594d!2sCol%C3%A1iste%20Dh%C3%BAlaigh%20CDCFE!5e0!3m2!1sen!2sie!4v1674674938676!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="emailadd">Email</label>
+        <input type="text" onblur="validateEmail(this);" required>
+        <label for="country">Country</label>
+        <select id="country" name="country">
+		<option value="australia">Ireland</option>
+		<option value="australia">United Kingdom</option>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+		
+        <span id= "status"  onclick="statusBar()" value="submit" >Submit</span>
+		<h2>&nbsp;</h2>
+<h1 id="myBar" style="color:aqua;"></h1>
+
+
+      </form>
+	  
+    </div>
+  </div>
+</div>
+</div>
+<form style="padding-left:10px;" name="myform">
+                        <input type="text" name="customer" id="fname" placeholder="Set your Cookies" style="width:25%;">
+                    </form> 
+	  <button style= "background-color:#f9004d; color: white; border: 5px solid transparent; font-weight: bold;padding: 5px 60px; border-radius: 30px; transition: .4s; cursor: pointer;" onclick="writeCookie()" value="submit" style="border: 1px solid green;">setCookie</button>
+	  <button style= "background-color:#f9004d; color: white; border: 5px solid transparent; font-weight: bold;padding: 5px 60px; border-radius: 30px; transition: .4s; cursor: pointer;" onclick="readCookie()" value="submit" style="border: 1px solid green;">getCookie</button>
+	  <div id="cookie"></div>
+		<h2>&nbsp;</h2>
+
+<div class="contact-me">
+		<p>The development of full artificial intelligence could spell the end of the human race..</p>
+		<button class="button-two" onclick= "location.href='https://www.ucd.ie/professionalacademy/findyourcourse/professional-diploma-artificial-intelligence/?campaignid=370509621&adgroupid=1142393417836085&adid=&utm_device=c&hsa_cam=13998526219&hsa_grp=1142393417836085&hsa_mt=b&hsa_src=o&hsa_ad=&hsa_acc=3944762284&hsa_net=adwords&hsa_kw=artificial%20intelligence%20course%20online&hsa_tgt=kwd-71400196724884:loc-92&hsa_ver=3&msclkid=61d6f4290c0b1a4af23f979cb3746051&utm_source=bing&utm_medium=cpc&utm_campaign=a%26c_sea_nbr_artificial_intelligence&utm_term=artificial%20intelligence%20course%20online&utm_content=a%26c_sea_nbr_artificial_intelligence'">Learn From Home</button>
+	</div>
+<!----footer start-------->
+	<footer>
+		<p id="mytext" onmouseout="mouseOver()" onmouseover="mouseOut()">AI Company</p>
+		<p>For more information and interaction - please click on the link below to Connect with us:</p>
+		<div class="social">
+			<a href="https://www.facebook.com/cdcfe"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.instagram.com/cdcfe.ie/"><i class="fab fa-instagram"></i></a>
+			<a href="https://twitter.com/ColDhulaigh"><i class="fab fa-dribbble"></i></a>
+		</div>
+		<p class="end">Yonas Haftom &copy; | 2023
+		<a href="https://www.w3schools.com/html/default.asp">| HTML Project</a>
+	    <a href="https://www.w3schools.com/css/default.asp">| CSS Tutorial |</a>
+		<a href="index.html">| Home</a></p>
+	</footer>
+
+</body>
+</html>
